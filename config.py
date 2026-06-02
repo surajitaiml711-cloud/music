@@ -92,23 +92,26 @@ autoclean = []
 confirmer = {}
 file_cache: dict[str, float] = {}
 
-START_IMG_URL = ["https://te.legra.ph/file/5fd13f2cc0d03bce9f7f2.jpg",
-                 "https://te.legra.ph/file/c15d01b3e6b40ea141dc9.jpg",
-                 "https://te.legra.ph/file/5fd13f2cc0d03bce9f7f2.jpg"]
-    
+START_IMG_URL = [
+    "https://ibb.co/HLs2mYSQ",
+    "https://ibb.co/HLs2mYSQ",
+    "https://ibb.co/HLs2mYSQ"
+]
+
 PING_IMG_URL = getenv(
-    "PING_IMG_URL", "https://telegra.ph/file/87f680aead03443f291b0.jpg"
+    "PING_IMG_URL", "https://ibb.co/HLs2mYSQ"
 )
-PLAYLIST_IMG_URL = "https://graph.org/file/c95a687e777b55be1c792.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/edd388a42dd2c499fd868.jpg"
-TELEGRAM_AUDIO_URL = "https://telegra.ph/file/492a3bb2e880d19750b79.jpg"
-TELEGRAM_VIDEO_URL = "https://telegra.ph/file/492a3bb2e880d19750b79.jpg"
-STREAM_IMG_URL = "https://graph.org/file/ff2af8d4d10afa1baf49e.jpg"
-SOUNCLOUD_IMG_URL = "https://graph.org/file/c95a687e777b55be1c792.jpg"
-YOUTUBE_IMG_URL = "https://graph.org/file/e8730fdece86a1166f608.jpg"
-SPOTIFY_ARTIST_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
-SPOTIFY_ALBUM_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
-SPOTIFY_PLAYLIST_IMG_URL = "https://graph.org/file/0bb6f36796d496b4254ff.jpg"
+
+PLAYLIST_IMG_URL = "https://ibb.co/HLs2mYSQ"
+STATS_IMG_URL = "https://ibb.co/HLs2mYSQ"
+TELEGRAM_AUDIO_URL = "https://ibb.co/HLs2mYSQ"
+TELEGRAM_VIDEO_URL = "https://ibb.co/HLs2mYSQ"
+STREAM_IMG_URL = "https://ibb.co/HLs2mYSQ"
+SOUNCLOUD_IMG_URL = "https://ibb.co/HLs2mYSQ"
+YOUTUBE_IMG_URL = "https://ibb.co/HLs2mYSQ"
+SPOTIFY_ARTIST_IMG_URL = "https://ibb.co/HLs2mYSQ"
+SPOTIFY_ALBUM_IMG_URL = "https://ibb.co/HLs2mYSQ"
+SPOTIFY_PLAYLIST_IMG_URL = "https://ibb.co/HLs2mYSQ"
 
 
 
@@ -117,7 +120,7 @@ def time_to_seconds(time):
     return sum(int(x) * 60**i for i, x in enumerate(reversed(stringt.split(":"))))
 
 
-DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:360"))
+DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:180"))
 
 
 if SUPPORT_CHANNEL:
